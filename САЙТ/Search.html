@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>School_415</title>
+	<link rel="stylesheet" type="text/css" href="css/style_search.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,300&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+	<script src="js/slick.min.js"></script>
+			<!-- Подключаем файл скриптов -->
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header id = "site-header" class="">		
+		<nav id="site-navigation"  class="container" role="navigation">
+
+			<div class="header_inner">
+				<button class="nav-button">МЕНЮ</button>
+				<div class="field_icon_eye">
+					
+					<p href="#" class="bvi-panel-open"> Версия для слабовидящих </p>
+				
+				</div> 
+				<img src="./img/eye.png" class="img_svg">
+				
+			</div>
+			<div class="space">
+
+
+				<div class="lines icon">
+
+					<span class="line top"></span>
+					<span class = 'line middle'></span>
+					<span class="line bottom"></span>
+				</div>
+
+
+			</div>
+
+			<div class="wrap_nav" id = "PGIAnav"> 
+				<nav class="wrapper__menu wrapper">
+				<a class="head_link" href= "major.html">Главная </a>
+				<div id = "sublinks_2" class="wrapper__menu-link" >
+					<p>Сведение об ОО<i  class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="Information_about.html">&mdash; Основные сведения</a>
+						<a href="#">&mdash; Структура и органы управления ОО</a>
+						<a href="#">&mdash; Документы</a>
+						<a href="#">&mdash; Вакантные места для приема(перевода) обучающихся</a>
+						<a href="#">&mdash; Руководство.Педагогический состав</a>
+						<a href="#">&mdash; Образовательные стандарты</a>
+						<a href="#">&mdash; Доступная среда</a>
+						<a href="#">&mdash; Международное сотрудничесво</a>
+					</div>
+
+				</div>
+				<div id = "sublinks_3" href="#" class="wrapper__menu-link" onclick="return false">
+					<p>Информация <i class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="#">&mdash; Страница директора</a>
+						<a href="#">&mdash; Администрация</a>
+						<a href="#">&mdash; Адрес гимназии и пропусной режим</a>
+						<a href="#">&mdash; Противодействие коррупции</a>
+						<a href="#">&mdash; Школьная служба медиации</a>
+						<a href="#">&mdash; Безопасность</a>
+						<a href="#">&mdash; Медицинский кабинет</a>
+						<a href="#">&mdash; ВСОКО</a>
+					</div>
+				</div>
+				<div id = "sublinks_4" href="#" class="wrapper__menu-link" onclick="return false">
+					<p>Гимназия сегодня <i class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="#">&mdash; Гимназию благодарят </a>
+						<a href="#">&mdash; Библиотека</a>
+						<a href="#">&mdash; История гимназии</a>
+						<a href="#">&mdash; Страница педагогов</a>
+						<a href="#">&mdash; Методические объединения</a>
+						<a href="#">&mdash; Социологический опрос</a>
+						<a href="#">&mdash; Прием в гимназию</a>
+
+					</div>
+				</div>
+				<div id = "sublinks_5" href="#" class="wrapper__menu-link" onclick="return false">
+					<p>Родителям <i class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="#">&mdash; Организация питания</a>
+						<a href="#">&mdash; Электронный дневник</a>
+						<a href="#">&mdash; Памятки и методические рекомендации</a>
+						<a href="#">&mdash; Школьная форма</a>
+						<a href="#">&mdash; Льготный проезд</a>
+						<a href="#">&mdash; уководство.Педагогический состав</a>
+						<a href="#">&mdash; Обучение детей с ОВЗ</a>
+						<a href="#">&mdash; Отдых и оздоровление</a>
+
+					</div>
+				</div>
+				<div id = "sublinks_6" href="#" class="wrapper__menu-link" onclick="return false">
+					<p>Учеба <i class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="#">&mdash; Итоговая аттестация 2020-2021</a>
+						<a href="#">&mdash; Расписание</a>
+						<a href="#">&mdash; Обучение с использованием ДОТ</a>
+						<a href="#">&mdash; Смешанный формат обучения</a>
+						<a href="#">&mdash; Диагностические работы</a>
+						<a href="#">&mdash; Проектная деятельность</a>
+						<a href="#">&mdash;Наставничесвто</a>
+						<a href="#">&mdash; Учебный процесс</a>
+						<a href="#">&mdash; Олимпиада и конкурсы</a>
+						<a href="#">&mdash; Достижения учащихся</a>
+					</div>
+				</div>
+				<div id = "sublinks_7" href="#" class="wrapper__menu-link" onclick="return false">
+					<p>Воспитательная работа <i class=" right"></i></p>
+					<div class="menu_sublinks">
+						<a href="#">&mdash; Воспитательная работа</a>
+						<a href="#">&mdash; Служба психолого-педагогического сопровождения</a>
+						<a href="#">&mdash; Профилактика детского дорожно-транспортного травматизма</a>
+						<a href="#">&mdash; Профилактика безнадзорности и правонарушений</a>
+						<a href="#">&mdash; Профориентация</a>
+						<a href="#">&mdash; ШСК “ИмпериУм”</a>
+						<a href="#">&mdash; Российское движение школьников</a>
+						<a href="#">&mdash; ЮНАРМИЯ</a>
+					</div>
+				</div>
+				</nav>
+			</div>
+			<div class="nav_menu_block">
+				<div id="page_sublinks-1" class="page_container_links"> 
+						<a id="btn_link-1" href="major.html">Главная</a>
+				</div>
+				<div id="page_sublinks-2" class="page_container_links"> 
+						<a id="btn_link-2" href="Information_about.html">Сведения об ОО</a>
+				</div>
+				<div id="page_sublinks-3" class="page_container_links"> 
+						<a id="btn_link-3" href="#">Информация</a>
+				</div>
+				<div id="page_sublinks-4" class="page_container_links"> 
+						<a id="btn_link-4" href="#">Гимназия сегодня</a>
+				</div>
+				<div id="page_sublinks-5" class="page_container_links"> 
+						<a id="btn_link-5" href="#">Родителям</a>
+					</div>
+				<div id="page_sublinks-6" class="page_container_links"> 
+						<a id="btn_link-6" href="#">Учеба</a>
+				</div>
+				<div id="page_sublinks-7" class="page_container_links"> 
+						<a id="btn_link-7" href="#">Воспитательная работа</a>
+				</div>
+
+				<div id="container_sub-links-2" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+							<a href="Information_about.html" class="menu-item_sub">Основные сведения</a>
+							<a href="#" class="menu-item_sub">Структура и органы управления ОО</a>
+							<a href="#" class="menu-item_sub">Документы</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Основные сведения</a>
+							<a href="#" class="menu-item_sub">Вакантные места для приема(перевода) обучающихся</a>
+							<a href="#" class="menu-item_sub">Руководство.Педагогический состав</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Образовательные стандарты</a>
+							<a href="#" class="menu-item_sub">Доступная среда</a>
+							<a href="#" class="menu-item_sub">Международное сотрудничесво</a>
+
+						</div>
+
+						</div>
+
+				</div>
+				<div id="container_sub-links-3" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Страница директора</a>
+							<a href="#" class="menu-item_sub">Администрация</a>
+							<a href="#" class="menu-item_sub">Адрес гимназии и пропусной режим</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Противодействие коррупции</a>
+							<a href="#" class="menu-item_sub">Школьная служба медиации</a>
+							<a href="#" class="menu-item_sub">Безопасность</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Медицинский кабинет</a>
+							<a href="#" class="menu-item_sub">ВСОКО</a>
+
+						</div>
+
+						</div>
+
+				</div>
+				<div id="container_sub-links-4" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Гимназию благодарят</a>
+							<a href="#" class="menu-item_sub">Библиотека</a>
+							<a href="#" class="menu-item_sub">История гимназии</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Страница педагогов</a>
+							<a href="#" class="menu-item_sub">Методические объединения</a>
+							<a href="#" class="menu-item_sub">Социологический опрос</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Прием в гимназию</a>
+
+						</div>
+
+						</div>
+
+				</div>
+				<div id="container_sub-links-6" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Итоговая аттестация 2020-2021</a>
+							<a href="#" class="menu-item_sub">Смешанный формат обучения</a>
+							<a href="#" class="menu-item_sub">Обучение с использованием ДОТ</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Расписание</a>
+							<a href="#" class="menu-item_sub">Диагностические работы</a>
+							<a href="#" class="menu-item_sub">Проектная деятельность</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Наставничесвто</a>
+							<a href="#" class="menu-item_sub">Учебный процесс</a>
+							<a href="#" class="menu-item_sub">Олимпиада и конкурсы</a>
+							<a href="#" class="menu-item_sub">Достижения учащихся</a>
+
+						</div>
+
+						</div>
+
+				</div>
+				<div id="container_sub-links-5" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Организация питания</a>
+							<a href="#" class="menu-item_sub">Электронный дневник</a>
+							<a href="#" class="menu-item_sub">Памятки и методические рекомендации</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Школьная форма</a>
+							<a href="#" class="menu-item_sub">Льготный проезд</a>
+							<a href="#" class="menu-item_sub">Руководство.Педагогический состав</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Обучение детей с ОВЗ</a>
+							<a href="#" class="menu-item_sub">Отдых и оздоровление</a>
+
+						</div>
+
+						</div>
+
+				</div>
+				<div id="container_sub-links-7" class="container_sub-links">
+					
+					<div class="sub_menu">
+						<div id="sub_menu-item_1" class="sub_menu-item">
+							
+
+							<a href="#" class="menu-item_sub">Служба психолого-педагогического сопровождения</a>
+
+						</div>
+
+						<div id="sub_menu-item_2" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">Профилактика детского дорожно-транспортного травматизма</a>
+							<a href="#" class="menu-item_sub">Профилактика безнадзорности и правонарушений</a>
+							<a href="#" class="menu-item_sub">Профориентация</a>
+
+						</div>
+
+						<div id="sub_menu-item_3" class="sub_menu-item">
+							
+							<a href="#" class="menu-item_sub">ШСК “ИмпериУм”</a>
+							<a href="#" class="menu-item_sub">Ученическое самоуправление</a>
+							<a href="#" class="menu-item_sub">ЮНАРМИЯ</a>
+
+						</div>
+
+						</div>
+
+				</div>
+			</div>
+			
+		</nav>
+
+
+	</header>
+
+	<div class="banner">
+		<div class="cover"></div>
+		<div class="btn">
+			<p><span class="submission_page">Поиск<span><p>
+
+		</div>
+	</div>
+	<div class="wrapper">
+
+		<form class="search_field" >
+			<input autocomplete="off" type="search" type="text" onkeyup="myFunction()" onkeypress="if(event.keyCode == 13) return false;" id="form-search" placeholder="Поиск по сайту"  name="text">
+			<input type="button" class="search_submit" name="op" value="Найти" id="form-submit">
+		</form>
+		<div class="menu_wrapper">
+			<div class="menu_area">
+				<div aria-label="refinement" id = 'Web_refinement' role="tab" class="tittle_ref active_ref">Страницы</div>
+				<div aria-label="refinement" id = "News_refinement" role="tab" class="tittle_ref inactive_ref" tabindex="0">Новости</div>
+				<div aria-label="refinement" id = "Announcements_refinement" role="tab" class="tittle_ref inactive_ref" tabindex="0">Объявления</div>
+			</div>
+		</div>
+		<!-- WEB -->
+		<div class="ul_web">
+			<ul id="myUL_1" class="myUl myUL_1 active">
+				<li><a href="#">Основные сведения</a></li>
+				<li><a href="#">Струтура и органы управления образовательной организацией</a></li>
+
+				<li><a href="#">Документы</a></li>
+				<li><a href="#">Образование</a></li>
+				<li><a href="#">Образовательные стандарты</a></li>
+
+				<li><a href="#">Руководство.Педагогический состав</a></li>
+				<li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+				<li><a href="#">Стипендии и меры поддержки обучающихся</a></li>
+				<li><a href="#">Платные образовательные услуги</a></li>
+
+				<li><a href="#">Финансово-хозяйственная деятельность</a></li>
+				<li><a href="#">Вакантные места для приема(перевода) обучающихся</a></li>
+				<li><a href="#">Доступная среда</a></li>
+				<li><a href="#">Международное сотрудничесво</a></li>
+
+
+				<li class = "last_link">
+					<div class="Error_block_1">
+						<span class="Error_alert"><p>Результатов поиска нет</p></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- NEWS -->
+		<div class="ul_news">
+			<ul id="myUL_2" class="myUl myUL_2 passive">
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">6 марта января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 апреля января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 сентября 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">6 марта января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 апреля января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 сентября 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">6 марта января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 января 2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 сентября 2000</div>
+						</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">6 марта  2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 апреля  2000</div>
+						</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Почетная награда</h3>
+							<p>Почетную грамоту за интерес к изучению истории и культуры Петербурга и творческий подход к созданию фотоотчета в городском историко-краеведческом проекте </p>
+
+							<div class="announcements_date">1 сентября 2000</div>
+						</span>
+					</a>
+				</li>
+				<li class="last_link">
+					<div class="Error_block_3">
+						<span class="Error_alert"><p>Результатов поиска нет</p></span>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- ANNOUNCEMENTS -->
+		<div class="ul_announcements">
+			<ul id="myUL_3" class="myUl myUL_3  passive">
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Всероссийская олимпиада школьников (региональный этап)</h3>
+							<p>
+										С 12 января по 25 февраля на базе высших учебных заведений города СПБ проходит региональный этап
+									</p>
+						</span>
+						<div class="announcements_date">2 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">4 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">5 февраля 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Всероссийская олимпиада школьников (региональный этап)</h3>
+							<p>
+										С 12 января по 25 февраля на базе высших учебных заведений города СПБ проходит региональный этап
+									</p>
+						</span>
+						<div class="announcements_date">2 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">4 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">5 февраля 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Всероссийская олимпиада школьников (региональный этап)</h3>
+							<p>
+										С 12 января по 25 февраля на базе высших учебных заведений города СПБ проходит региональный этап
+									</p>
+						</span>
+						<div class="announcements_date">2 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">4 января 2000</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<span class="news_are">
+							<h3>Expansion are</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat tempora at totam quo esse doloribus expedita sequi quis officia ullam labore quod, eum deleniti veritatis, </p>
+						</span>
+						<div class="announcements_date">5 февраля 2000</div>
+					</a>
+				</li>
+
+				<li class="last_link">
+					<div class="Error_block_3">
+						<span class="Error_alert"><p>Результатов поиска нет</p></span>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+		<div class="button_add">
+			<input class = 'btn_ad btn_web' type="button" value="Поазать еще" onmousedown="button_add()">
+		</div>
+
+	</div>
+
+	<div class="content"></div>
+
+		<footer class="page_footer">
+
+			
+			<div class="footer-main_menu">
+				
+				<ul class="footer-menu_list">
+					<li class="footer-menu_item"><a href="major.html" class="active_page">Главная</a></li>
+					<li class="footer-menu_item"><a href="Information_about.html">Сведения об ОО</a></li>
+					<li class="footer-menu_item"><a href="#">Гимназия сегодня</a></li>
+					<li class="footer-menu_item"><a href="#">Родителям</a></li>
+					<li class="footer-menu_item"><a href="#">Учеба</a></li>
+					<li class="footer-menu_item"><a href="#">Воспитательная работа</a></li>
+				</ul>
+
+
+
+			</div>	
+
+			<div class="footer_logo_address">
+
+				<div class="footer_logo">
+					<img src="./img/Logo_schoolwithouback.png">
+				</div>
+
+				<div class="footer_address">
+					
+					<h2 class="footer_address_tittle">Наш адрес</h2>
+
+					<img src="./img/placeholder.png" class="footer_address_icon">
+
+					<p><a class="footer_address_link">Посмотреть на карте</a></p>
+
+				</div>
+
+
+
+			</div>
+
+			<div class="footer_contacts_social_networks">
+
+				<div class="footer_contacts">
+				
+					<h2 class="footer_contacts_tittle">Контакты	</h2>
+
+					<ul class="footer_contacts_list">
+						<li class="footer_contacts_item">
+							<a class="footer_contacts_link" href="tel:+78124173865">+7 (812)417-38-65</a> - учебная часть
+						</li>
+						<li class="footer_contacts_item">
+						Почта: <a class="footer_contacts_link" href="mailto:pgia2@obr.gov.spb.ru">pgia2@obr.gov.spb.ru</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="footer_social_networks">
+					<h2 class="footer_contacts_tittle">Наши социальные сети	</h2>
+
+					<a href="https://vk.com/pgia_2"><img src="img/vk.png" id="icon-1"></a>
+
+					<a href="https://www.instagram.com/pgia2/"><img src="img/instagram.png" id="icon-2"></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+	
+
+
+	
+</body>
+</html>
